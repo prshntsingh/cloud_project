@@ -38,6 +38,15 @@ dos='''
 </form>
 '''
 
+bs='''
+<form action = "/cgi-bin/bs.py" method ="POST">
+Enter the name of Hard disk<input type = 'text' name = 'name'/><br/><br/>
+Enter the size of Hard disk<input type = 'text' name ='size'/><br/><br/><br/>
+<input type = 'submit' value = 'PROCEED'/>
+<input type ="reset" value = 'RESET'/>
+</form>
+'''
+
 
 if storage_type == "fos":
 	print fos
@@ -53,7 +62,8 @@ elif storage_type == "dos":
 
 
 
-#elif storage_type == "bs":
+elif storage_type == "bs":
+	print bs
 
 
 
