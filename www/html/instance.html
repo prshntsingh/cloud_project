@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+Launch instance
+</title>
+</head>
+
+<body>
+<form action="/cgi-bin/newinstance.py" method = "POST" >
+<b><h2>FOLLOW THE FOLLOWING STEPS TO GET YOUR INSTANCE</h2></b><br/><br/><br/><br/>
+
+<B>1.ENTER THE NAME OF THE SECURITY GROUP</BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="text" name ="grp_name"/><br/><br/><br/></B>
+
+<B>2.a)SELECT THE OPERATING SYSTEM:--</B><br/><br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name ="ami">
+	<option value = "ami-6f68cf0f">Red Hat Enterprise Linux 7.3 (HVM), SSD Volume Type</option>
+	<option value = "ami-3189ec51">Microsoft Windows Server 2012 R2 Base</option>
+	<option value = "ami-4836a428">Amazon Linux AMI 2017.03.0 (HVM), SSD Volume Type</option>
+</select><br/><br/>
+
+<B>2.b)	GIVE AMI ID MANUALLY:--</B><br/><br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text"  name ="ami"/>
+<br/><br/><br/><br/>
+
+<B>2.SELECT THE NUMBER OF INSTANCES:--</B><br/><br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name ="no">
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+</select><br/><br/><br/><br/>
+
+
+<B>3.SELECT THE PORTS YOU WANT:--</B><br/><br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" name = "22">Port 22(For SSH)<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" name = "3389">Port 3389(For RDP)<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" name = "80">Port 80(For HTTP)<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "checkbox" name = "443">Port 22(For HTTPS)<br/><br/><br/>
+<input type = "submit" value = "DONE!!">
+
+
+</form>
+</body>
+</html>

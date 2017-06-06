@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Launch New volume
+</title>
+</head>
+
+<body>
+<form action="/cgi-bin/snap_restore.py" method = "POST" >
+<b><h2>FOLLOW THE FOLLOWING STEPS TO GET YOUR VOLUME FROM SNAPSHOT</h2></b><br/><br/><br/><br/>
+
+<B>1.ENTER THE SNAPSHOT ID--</BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="text" name ="snap_id"/><br/><br/><br/></B>
+
+<B>2.a)SELECT THE AVAILABILITY ZONE:--</B><br/><br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name ="zone">
+	<option value = "us-west-2a">us-west-2a</option>
+	<option value = "us-west-2b">us-west-2b</option>
+	<option value = "us-west-2c">us-west-2c</option>
+</select><br/><br/>
+
+
+<input type = "submit" value = "DONE!!">
+
+
+</form>
+</body>
+</html>
+
+
